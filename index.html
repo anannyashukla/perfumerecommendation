@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfume Recommendation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1 class="header-title">🌸 Perfume Recommendation Engine 🌸</h1>
+  </header>
+  <main>
+    <section class="form-section">
+      <h2 class="section-title">Find Your Perfect Scent</h2>
+      <form id="perfumeForm">
+        <label for="scentType">What type of scent do you prefer?</label>
+        <select id="scentType">
+          <option value="fresh">Fresh</option>
+          <option value="floral">Floral</option>
+          <option value="woody">Woody</option>
+          <option value="oriental">Oriental</option>
+        </select>
+        
+        <label for="intensity">Preferred Intensity:</label>
+        <select id="intensity">
+          <option value="light">Light</option>
+          <option value="moderate">Moderate</option>
+          <option value="strong">Strong</option>
+        </select>
+        
+        <button type="button" id="recommendBtn" class="button">✨ Get Recommendation ✨</button>
+      </form>
+    </section>
+    
+    <section class="result-section" id="resultSection">
+      <h2 class="result-title">Your Recommendation:</h2>
+      <p id="recommendation"></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Perfume Finder | Made with 💖</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

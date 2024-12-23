@@ -1,0 +1,121 @@
+/* Import Multiple Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Dancing+Script:wght@600&family=Roboto:wght@400&display=swap');
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Default Font */
+  color: #333;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  animation: fadeIn 1s ease-in;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
+}
+
+.header-title {
+  font-family: 'Dancing Script', cursive; /* Fancy Script Font */
+  font-size: 2.5rem;
+  color: #ff6f61;
+}
+
+/* Main Section Styling */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-title {
+  font-family: 'Poppins', sans-serif; /* Bold Font for Section Titles */
+  color: #e0554f;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+label {
+  font-family: 'Roboto', sans-serif; /* Default Clean Font */
+  font-weight: bold;
+  color: #ff6f61;
+}
+
+select, button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 2px solid #ff6f61;
+  border-radius: 8px;
+  outline: none;
+}
+
+select {
+  background: #fff;
+}
+
+.button {
+  background: #ff6f61;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background: #e0554f;
+  transform: scale(1.1); /* Interactive Button Animation */
+}
+
+.result-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  border-radius: 12px;
+  background: #ffe9e6;
+  display: none;
+  text-align: center;
+}
+
+.result-title {
+  font-family: 'Poppins', sans-serif; /* Consistent with Section Titles */
+  color: #e0554f;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  background: rgba(255, 255, 255, 0.8);
+  color: #ff6f61;
+}
